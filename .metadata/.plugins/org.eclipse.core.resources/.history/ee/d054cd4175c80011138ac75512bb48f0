@@ -1,0 +1,25 @@
+	function keystorage(nav) {
+		var window = Ti.UI.createWindow({
+			navBarHidden: false,
+	        modal : false,
+	        fullscreen: false,
+	        tabBarHidden: true,
+			title: 'Private Key',
+			backgroundColor: '#FFFFFF'
+		});
+	    	
+		nav.open(window);
+		
+		
+		var label1 = Ti.UI.createLabel({
+			color: '#000',
+			font: { fontSize:18 },
+			shadowColor: '#aaa',
+			shadowOffset: {x:2, y:2},
+			text: 'Private Key',
+			top: 5,
+			left: 5
+	    });
+	    window.add(label1);
+	}
+	module.exports = keystorage;

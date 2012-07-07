@@ -1,0 +1,35 @@
+	function keystorage(nav) {
+		var window = Ti.UI.createWindow({
+			navBarHidden: false,
+	        modal : false,
+	        fullscreen: false,
+	        tabBarHidden: true,
+			title: 'Private Key',
+			backgroundColor: '#FFFFFF'
+		});
+	    	
+		nav.open(window);
+		
+		var view = Ti.UI.createView({layout: 'vertical'});
+		
+		var label1 = Ti.UI.createLabel({
+			color: '#000',
+			font: { fontSize:18 },
+			/*shadowColor: '#aaa',
+			shadowOffset: {x:2, y:2},*/
+			text: 'Private Key',
+			top: 5,
+			left: 5
+	    });
+	    view.add(label1);
+	    
+	    var input = Ti.UI.createTextField({
+			borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+			color: '#336699',
+			top: 5, left: 10, right: 10
+  	    });
+  	    view.add(input);
+  	    
+  	    window.add(view);
+	}
+	module.exports = keystorage;

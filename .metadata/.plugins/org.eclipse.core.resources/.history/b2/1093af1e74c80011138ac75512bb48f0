@@ -1,0 +1,12 @@
+	function keystorage(nav) {
+		var window = Ti.UI.createWindow({
+			navBarHidden: false,
+	        modal : false,
+	        fullscreen: false,
+	        tabBarHidden: true,
+			title: 'Private Key',
+			backgroundColor: '#FFFFFF'
+		});
+	    	
+		nav.open(window);
+	}

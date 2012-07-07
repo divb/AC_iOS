@@ -1,0 +1,26 @@
+	function keystorage(nav) {
+		var window = Ti.UI.createWindow({
+			navBarHidden: false,
+	        modal : false,
+	        fullscreen: false,
+	        tabBarHidden: true,
+			title: 'Private Key',
+			backgroundColor: '#FFFFFF'
+		});
+	    	
+		nav.open(window);
+		
+		
+		var label1 = Ti.UI.createLabel({
+			color: '#900',
+			font: { fontSize:48 },
+			shadowColor: '#aaa',
+			shadowOffset: {x:5, y:5},
+			text: 'A simple label',
+			textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+			top: 30,
+			width: 'auto', height: 'auto'
+	    });
+	    window.add(label1);
+	}
+	module.exports = keystorage;
