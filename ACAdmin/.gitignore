@@ -1,4 +1,4 @@
 tmp
-build
-.settings
-.metadata
+build/*
+.settings/*
+.metadata/*
