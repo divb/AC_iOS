@@ -12,6 +12,7 @@
 		
 		var view = Ti.UI.createView({layout: 'vertical'});
 		
+		// Label für das Input-Feld
 		var label1 = Ti.UI.createLabel({
 			color: '#000',
 			font: { fontSize:18 },
@@ -23,6 +24,7 @@
 	    });
 	    view.add(label1);
 	    
+	    // Textfeld für den Private Key
 	    var input = Ti.UI.createTextField({
 			borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 			color: '#336699',
@@ -30,6 +32,7 @@
   	    });
   	    view.add(input);
   	    
+  	    // Beschreibungstext
   	    var description = Ti.UI.createLabel({
   	    	color: '#ABABAB',
   	    	font: { fontSize: 12 },
@@ -38,6 +41,7 @@
   	    });
   	    view.add(description);
   	    
+  	    // Button
   	    var button = Ti.UI.createButton({
   	    	systemButton: Ti.UI.iPhone.SystemButtonStyle.ADD,
   	    	title: 'Key speichern',
